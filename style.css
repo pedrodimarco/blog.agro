@@ -1,0 +1,156 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+/* NAV BAR */
+
+#nav-important {
+  background-color: #ffff!important;
+}
+.nav-item {
+  font-size: 18px;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
+.nav-item,
+.card, h2 {
+  padding: 30px;
+} 
+.navbar-brand {
+  font-family: 'Merriweather';
+  font-size: 40px;
+  font-weight: 20px;
+  color: #808080!important;
+}
+/* NAV BAR ENDS */
+
+h1 {
+  border-color: black;
+  border-width: 50px;
+  box-sizing: border-box;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("back.jpeg"); */
+
+  background-image: url("img/hero-img.jpeg");
+
+  /* Set a specific height */
+  height: 75%;
+  width: 85%;
+  align-content: center;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+
+  border-radius: 35px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* ZOOM ON HOVER CARD PRODUCTS */
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+#footer-important {
+  background-color: #0F4C81;
+  color: #ffff;
+}
+
+#footer-important .row {
+  margin: 0;
+}
+#footer-important .row i{
+  font-size: 50px;
+}
+#footer-important .row .col {
+  font-size: 60px;
+  font-family: 'Lato';
+  text-align: center;
+}
+#footer-important .row .col p {
+  font-weight: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.row {
+  padding: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+  height: 30vh;
+}
+
+.title {
+  height: auto;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px;
+  box-shadow: 5px 5px 15px grey;
+}
+
+#card-article {
+  padding: 0;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+.row .g-0 {
+  padding: 0;
+}
+
+.col-md-3 {
+  height: inherit;
+}
+.col-md-3 img {
+  border-radius: 15px 0 0 15px;
+}
+
+/* BREAKPOINT  */
+
+@media screen and (max-width:768px) {
+  .row {
+    height: unset;
+  }
+
+  .title {
+    height: 15vh;
+  }
+
+  .col-md-3 {
+    height: 35vh;
+  }
+
+  #card-article {
+    padding: 0;
+    /* width: 100vw; */
+    overflow: hidden;
+  }
+}
